@@ -1,0 +1,76 @@
+
+
+<div class="container">
+  <h1>PERSONAL ONLINE <ion-icon class="icon-person" color="warning" name="school"></ion-icon></h1>
+  <ion-slides [options]="option">
+
+    <ion-slide >
+      <ion-card>
+        <img  class="image" src="../../../../assets/novoTreino.jpg" alt="error" >
+        <div class="new-train">
+            <ion-icon class="icon-new-training" name="add"></ion-icon>
+            <h3 class="h3"><span>NOVO TREINO</span></h3>
+        </div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide *ngFor="let item of personal"  >
+      <ion-card >
+        <img  src={{item.img}} alt="error">
+        <h3 class="h3-personal">{{item.name}}</h3>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+    
+</div>
+
+<div class="container">
+  <h1>PROGAMAS<ion-badge color="warning">NOVO</ion-badge></h1>
+  <ion-slides [options]="option">
+
+    <ion-slide >
+      <ion-card>
+        <img  class="image" src="../../../../assets/Powerlifting.jpg" alt="error" >
+        <div class="new-progam">
+            <span class="span-progam">CONTINUAR TREINANDO</span>
+            <h3 class="h3-progam">LEVANTAMENTO DE PESO</h3>
+        </div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide *ngFor="let item of programs"  >
+      <ion-card >
+        <img  src={{item.img}} alt="error">
+        <h3 class="h3-personal">{{item.name}}</h3>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+    
+</div>
+
+<div class="container-end">
+  <h1>CONTEÚDOS </h1>
+  <ion-slides [options]="option">
+
+    <ion-slide >
+      <ion-card>
+        <img  class="image" src="../../../../assets/runn.jpg" alt="error" >
+        <div class="new-progam">
+            <span class="span-contents">CONTINUAR LENDO</span>
+            <h3 class="h3-progam">ATIVIDADE FÍSICA É SAUDE</h3>
+        </div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide *ngFor="let item of contents"  >
+      <ion-card >
+        <img  src={{item.img}} alt="error">
+        <h3 class="h3-personal">{{item.name}}</h3>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+    
+</div>

@@ -1,0 +1,140 @@
+h1 {
+    
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 3px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+ion-card{
+
+    box-shadow: none;
+    border-radius: 8px;
+    img{
+        object-fit: cover;
+        width: 100%;
+        transform: scale(1.1, 1.1) rotate(2deg);
+        transition: 600ms all ease-in-out;
+    }
+}
+
+.swiper-slide-active{
+transform: scale(1.05, 1.1);
+
+ion-card{
+
+    img{
+        transform: scale(1, 1.1);
+    }
+}
+
+}
+
+.swiper-slide{
+transition: 300ms all ease-in-out;
+    
+}
+
+.new-train{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.h3 { 
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    width: 100%;
+   
+   
+
+ }
+ 
+ .h3 span { 
+    color:gold; 
+    font: bold 15px Helvetica, Sans-Serif; 
+    letter-spacing: -1px; 
+     
+ }
+
+ .image{
+    position: relative; 
+    filter: grayscale(1.0);
+    filter: blur(1);
+ }
+
+ .icon-new-training{
+    position: absolute;
+    top: 38%;
+    right: 71%;
+    color: gold;
+    font-size: 31px;
+    border: solid 2.8px gold;
+    border-radius: 50%;
+ }
+
+ .container{
+     padding-left: 20px;
+ }
+
+ .container-end{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+ .new-progam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 71%;
+    flex-direction: column;
+ }
+
+ .span-progam{
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 10px;
+    margin-right: 12px;
+}
+
+.span-contents{
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 10px;
+    margin-right: 38px;
+}
+
+
+.h3-progam{
+    font-size: 11px;
+    margin: 0px;
+    font-weight: 600;
+    color: white;
+    margin-left: 8px;
+}
+
+.h3-personal{
+    font-size: 11px;
+    margin: 0px;
+    font-weight: 600;
+    color: white;
+    margin-left: 8px;
+    position: fixed;
+    top: 76%;
+    width: fit-content;
+}
+
+ion-badge {
+    font-size: 7px;
+    margin-left: 4px;
+}
+
+ion-slides{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

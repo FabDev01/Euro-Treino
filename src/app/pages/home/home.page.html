@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="container">
+      <i-buttons slot="start" >
+        <ion-buttons slot="start">
+          <ion-menu-button menu="main-menu">aaa</ion-menu-button>
+        </ion-buttons>
+      </i-buttons>
+      <div class="box-title">
+        <ion-title class="title">Usina</ion-title>
+        <ion-title class="sub-title">Play</ion-title>
+      </div>
+      
+      <ion-icon class="top-icon" name="rocket-outline"></ion-icon>
+      <ion-fab horizontal="end" edge>
+   
+        <ion-fab-button color="dark" class="fab-bell-btn">
+          <ion-icon class="icon-bell" name="notifications"></ion-icon>
+          
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card class="card-profile">
+<div class="box-profile">
+  <div class="box-photo-profile">
+    <ion-avatar>
+      <img src="../../../assets/strong-man-training-gym.jpg" alt="error">
+    </ion-avatar>
+  </div>
+  
+  <div class="profiles" *ngFor="let item of profile">
+    <h2>{{item.name}}</h2>
+    <h3>Nível {{item.level}}</h3>
+  </div>
+ 
+</div>
+<div class='box-status'>
+  <ion-chip class="status-1">
+      <ion-icon class="icon-status" name="accessibility"></ion-icon>
+    <ion-label class="label-status">MEU CORPO</ion-label>
+  </ion-chip>
+  
+  <ion-chip class="status-2">
+      <ion-icon class="icon-status-2" name="ribbon"></ion-icon>
+    <ion-label class="label-status">OBJETIVOS E CONQUISTAS</ion-label>
+  </ion-chip>
+</div>
+  </ion-card>
+  <app-cards></app-cards>
+</ion-content>
